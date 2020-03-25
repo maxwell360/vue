@@ -63,22 +63,4 @@ export default {
   background: #1b233f;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.light-field {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  &::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.dark-field {
-  background: rgba(198, 208, 235, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: black;
-  &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
 </style>
