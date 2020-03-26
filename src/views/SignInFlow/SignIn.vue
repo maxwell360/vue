@@ -7,7 +7,7 @@
     <RequestAccount />
     <div class="login">
       <img src="@/assets/logo.png" />
-      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Schlieselotte.io</h4>
+      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Test.io</h4>
       <form @submit.prevent="onSubmit">
         <input
           type="email"
