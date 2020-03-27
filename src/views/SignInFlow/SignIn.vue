@@ -7,7 +7,7 @@
     <RequestAccount />
     <div class="login">
       <img src="@/assets/logo.png" />
-      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Schlieselotte.io</h4>
+      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Test.io</h4>
       <form @submit.prevent="onSubmit">
         <input
           type="email"
@@ -81,6 +81,12 @@ export default {
     if (params.userLoggedOut) {
       this.hasText = true;
       this.text = "You have logged out!";
+    } else if (params.userRecoveredAccount) {
+      this.hasText = true;
+      this.text = `A recovery email has been sent to ${params.email} `;
+    } else if (params.userRequestedAccount) {
+      this.hasText = true;
+      this.text = `A user requested an account ${params.email} `;
     }
   }
 };
