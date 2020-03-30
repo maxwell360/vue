@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header />
     <h2>Team</h2>
     <div class="cards">
       <transition appear appear-active-class="animated flipInX">
@@ -70,8 +71,12 @@
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
 export default {
   name: "Team",
+  components: {
+    Header
+  },
   computed: {
     isDarkMode() {
       return this.$store.getters.isDarkMode;
